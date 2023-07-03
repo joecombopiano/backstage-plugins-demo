@@ -2650,6 +2650,15 @@
     "@backstage/errors" "^1.2.0"
     cross-fetch "^3.1.5"
 
+"@backstage/catalog-client@^1.4.3-next.0":
+  version "1.4.3-next.0"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@backstage/catalog-client/-/catalog-client-1.4.3-next.0.tgz#a07e863ed1f73346ae8ef9ef434aa221d0edb33f"
+  integrity sha512-vAkyB/fRr4dI2o17keUvX1hGKi3eToH6jFqBJO6ywTXunUWbMsusMCNs/y7kT3sNmIBZaLa1ElVGVfoAsg/fCA==
+  dependencies:
+    "@backstage/catalog-model" "^1.4.1-next.0"
+    "@backstage/errors" "^1.2.1-next.0"
+    cross-fetch "^3.1.5"
+
 "@backstage/catalog-model@^1.4.0":
   version "1.4.0"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@backstage/catalog-model/-/catalog-model-1.4.0.tgz#5098a528ade258248443a6cd7dafe3c8f2693615"
@@ -2657,6 +2666,19 @@
   dependencies:
     "@backstage/config" "^1.0.8"
     "@backstage/errors" "^1.2.0"
+    "@backstage/types" "^1.1.0"
+    ajv "^8.10.0"
+    json-schema "^0.4.0"
+    lodash "^4.17.21"
+    uuid "^8.0.0"
+
+"@backstage/catalog-model@^1.4.1-next.0":
+  version "1.4.1-next.0"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@backstage/catalog-model/-/catalog-model-1.4.1-next.0.tgz#f8bb96801bf157ff0990bb770a179829e06c2c5e"
+  integrity sha512-QPWTQD+H3N6es7Ay9M9V3FzHg1flp/8/ApyH8k1w6BWaSGpaX4Zlo89jW5rSTCZB7Q8tmP9eB9vrrkWGtS8YsA==
+  dependencies:
+    "@backstage/config" "^1.0.8"
+    "@backstage/errors" "^1.2.1-next.0"
     "@backstage/types" "^1.1.0"
     ajv "^8.10.0"
     json-schema "^0.4.0"
@@ -2890,6 +2912,53 @@
     zen-observable "^0.10.0"
     zod "^3.21.4"
 
+"@backstage/core-components@^0.13.3-next.0":
+  version "0.13.3-next.0"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@backstage/core-components/-/core-components-0.13.3-next.0.tgz#a3f1e54906c70a7fcc431a575293642ec1f151d4"
+  integrity sha512-2wgIjhH4p7IEtRUPon/eSNdYYVaXPJZh2XFS8skAzBxYF84Qc3oms5w8WRLtY+WGEscdMUnpHJAccZ0bx8tvBA==
+  dependencies:
+    "@backstage/config" "^1.0.8"
+    "@backstage/core-plugin-api" "^1.5.2"
+    "@backstage/errors" "^1.2.1-next.0"
+    "@backstage/theme" "^0.4.0"
+    "@backstage/version-bridge" "^1.0.4"
+    "@date-io/core" "^1.3.13"
+    "@material-table/core" "^3.1.0"
+    "@material-ui/core" "^4.12.2"
+    "@material-ui/icons" "^4.9.1"
+    "@material-ui/lab" "4.0.0-alpha.61"
+    "@react-hookz/web" "^20.0.0"
+    "@types/react" "^16.13.1 || ^17.0.0"
+    "@types/react-sparklines" "^1.7.0"
+    "@types/react-text-truncate" "^0.14.0"
+    ansi-regex "^6.0.1"
+    classnames "^2.2.6"
+    d3-selection "^3.0.0"
+    d3-shape "^3.0.0"
+    d3-zoom "^3.0.0"
+    dagre "^0.8.5"
+    history "^5.0.0"
+    immer "^9.0.1"
+    linkify-react "4.1.1"
+    linkifyjs "4.1.1"
+    lodash "^4.17.21"
+    pluralize "^8.0.0"
+    prop-types "^15.7.2"
+    qs "^6.9.4"
+    rc-progress "3.4.1"
+    react-helmet "6.1.0"
+    react-hook-form "^7.12.2"
+    react-markdown "^8.0.0"
+    react-sparklines "^1.7.0"
+    react-syntax-highlighter "^15.4.5"
+    react-text-truncate "^0.19.0"
+    react-use "^17.3.2"
+    react-virtualized-auto-sizer "^1.0.11"
+    react-window "^1.8.6"
+    remark-gfm "^3.0.1"
+    zen-observable "^0.10.0"
+    zod "^3.21.4"
+
 "@backstage/core-plugin-api@^1.5.2":
   version "1.5.2"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@backstage/core-plugin-api/-/core-plugin-api-1.5.2.tgz#98e31acd1938de4bdcc090b0bd5ee185e5bfe705"
@@ -2907,6 +2976,15 @@
   version "1.2.0"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@backstage/errors/-/errors-1.2.0.tgz#5e6ad4c3d567a04eaee1bf8f2ce1ff48352f509a"
   integrity sha512-APZ7jtnfY9uAFMwAJhhTgFANdOhQU6hzBLPeajTiblrpgyiiBc8E6lQ//3eO20lxR/c5xSj8hD54KcVUROpXgA==
+  dependencies:
+    "@backstage/types" "^1.1.0"
+    cross-fetch "^3.1.5"
+    serialize-error "^8.0.1"
+
+"@backstage/errors@^1.2.1-next.0":
+  version "1.2.1-next.0"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@backstage/errors/-/errors-1.2.1-next.0.tgz#7953482c5d0bcf10abd01b6802ee3fe9c0a2a1d6"
+  integrity sha512-gLyFXZ/+Y2+2zhrzTfgogB6FojPU9MQvreTSroxkGvLvt5L6bOGiXgnAcEDEeEY2pYAxc6WAC6mjD91UjMYl9g==
   dependencies:
     "@backstage/types" "^1.1.0"
     cross-fetch "^3.1.5"
@@ -2956,6 +3034,21 @@
     "@azure/identity" "^3.2.1"
     "@backstage/config" "^1.0.8"
     "@backstage/errors" "^1.2.0"
+    "@octokit/auth-app" "^4.0.0"
+    "@octokit/rest" "^19.0.3"
+    cross-fetch "^3.1.5"
+    git-url-parse "^13.0.0"
+    lodash "^4.17.21"
+    luxon "^3.0.0"
+
+"@backstage/integration@^1.5.1-next.0":
+  version "1.5.1-next.0"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@backstage/integration/-/integration-1.5.1-next.0.tgz#276ee38c0deafc78fd9e5006d00f8cf928f5abf4"
+  integrity sha512-b0CpmXCzeIFIcuEw1uvwV2udT7p69R+fjPYUq1EeSFVbx+1286MgHrf01h/hqlAoqajCQeV1biyTB+4BUCM9Iw==
+  dependencies:
+    "@azure/identity" "^3.2.1"
+    "@backstage/config" "^1.0.8"
+    "@backstage/errors" "^1.2.1-next.0"
     "@octokit/auth-app" "^4.0.0"
     "@octokit/rest" "^19.0.3"
     cross-fetch "^3.1.5"
@@ -3126,6 +3219,15 @@
     "@backstage/plugin-permission-common" "^0.7.6"
     "@backstage/plugin-search-common" "^1.2.4"
 
+"@backstage/plugin-catalog-common@^1.0.15-next.0":
+  version "1.0.15-next.0"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@backstage/plugin-catalog-common/-/plugin-catalog-common-1.0.15-next.0.tgz#932512df2dc701a83a781273f976afd9075b3a8e"
+  integrity sha512-PhdqM5EfM8PXDLJigQyeUtivfity3ts3eolOry8Bbq8fhBEOEywZ9IMNm5HiRUCcgAr8i+DoK/9nregE7Sm2Yw==
+  dependencies:
+    "@backstage/catalog-model" "^1.4.1-next.0"
+    "@backstage/plugin-permission-common" "^0.7.7-next.0"
+    "@backstage/plugin-search-common" "^1.2.5-next.0"
+
 "@backstage/plugin-catalog-graph@^0.2.31":
   version "0.2.31"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@backstage/plugin-catalog-graph/-/plugin-catalog-graph-0.2.31.tgz#b63ec1b5113c93cc538d9d16c187880b5b1b39cf"
@@ -3200,6 +3302,37 @@
     "@backstage/plugin-catalog-common" "^1.0.14"
     "@backstage/plugin-permission-common" "^0.7.6"
     "@backstage/plugin-permission-react" "^0.4.13"
+    "@backstage/theme" "^0.4.0"
+    "@backstage/types" "^1.1.0"
+    "@backstage/version-bridge" "^1.0.4"
+    "@material-ui/core" "^4.12.2"
+    "@material-ui/icons" "^4.9.1"
+    "@material-ui/lab" "4.0.0-alpha.61"
+    "@react-hookz/web" "^23.0.0"
+    "@types/react" "^16.13.1 || ^17.0.0"
+    classnames "^2.2.6"
+    jwt-decode "^3.1.0"
+    lodash "^4.17.21"
+    material-ui-popup-state "^1.9.3"
+    qs "^6.9.4"
+    react-use "^17.2.4"
+    yaml "^2.0.0"
+    zen-observable "^0.10.0"
+
+"@backstage/plugin-catalog-react@^1.7.1-next.0":
+  version "1.7.1-next.0"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@backstage/plugin-catalog-react/-/plugin-catalog-react-1.7.1-next.0.tgz#643b668e0646455c5adbc097f77db9d22dc77007"
+  integrity sha512-yC06O6xq9fYqL5Cruxu2C3HA8h9MUCFuLkjQxPyDVYZuVdl7Y47MroCHr/JLbzhbEOAgR3yhJbrNu2K1IfWOsg==
+  dependencies:
+    "@backstage/catalog-client" "^1.4.3-next.0"
+    "@backstage/catalog-model" "^1.4.1-next.0"
+    "@backstage/core-components" "^0.13.3-next.0"
+    "@backstage/core-plugin-api" "^1.5.2"
+    "@backstage/errors" "^1.2.1-next.0"
+    "@backstage/integration" "^1.5.1-next.0"
+    "@backstage/plugin-catalog-common" "^1.0.15-next.0"
+    "@backstage/plugin-permission-common" "^0.7.7-next.0"
+    "@backstage/plugin-permission-react" "^0.4.14-next.0"
     "@backstage/theme" "^0.4.0"
     "@backstage/types" "^1.1.0"
     "@backstage/version-bridge" "^1.0.4"
@@ -3303,6 +3436,18 @@
     uuid "^8.0.0"
     zod "^3.21.4"
 
+"@backstage/plugin-permission-common@^0.7.7-next.0":
+  version "0.7.7-next.0"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@backstage/plugin-permission-common/-/plugin-permission-common-0.7.7-next.0.tgz#427fb026e0132a876589bfaa6ded44c772e73a15"
+  integrity sha512-v2i039MtYCaaF3GQzdxGdqSxdpJdtTrUsIm2KaqEyVVZbl4W0GwDYWeH1LcW52BxIsdQI0onrAasQ3cXpvd+fA==
+  dependencies:
+    "@backstage/config" "^1.0.8"
+    "@backstage/errors" "^1.2.1-next.0"
+    "@backstage/types" "^1.1.0"
+    cross-fetch "^3.1.5"
+    uuid "^8.0.0"
+    zod "^3.21.4"
+
 "@backstage/plugin-permission-node@^0.7.9":
   version "0.7.9"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@backstage/plugin-permission-node/-/plugin-permission-node-0.7.9.tgz#94c7970a6499b0605b5b97eacdfdd5331ae99ed8"
@@ -3328,6 +3473,19 @@
     "@backstage/config" "^1.0.8"
     "@backstage/core-plugin-api" "^1.5.2"
     "@backstage/plugin-permission-common" "^0.7.6"
+    "@types/react" "^16.13.1 || ^17.0.0"
+    cross-fetch "^3.1.5"
+    react-use "^17.2.4"
+    swr "^2.0.0"
+
+"@backstage/plugin-permission-react@^0.4.14-next.0":
+  version "0.4.14-next.0"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@backstage/plugin-permission-react/-/plugin-permission-react-0.4.14-next.0.tgz#43be1024ed65896002f87eae5374423505415736"
+  integrity sha512-XRFGBhX154hDcRrxG/xzmZnvFZUIsU69IoBeRXHIZjhGpSE5mY64KAXCDjwxj2ZpWxzcAx5CQyIu6pjOPUX07A==
+  dependencies:
+    "@backstage/config" "^1.0.8"
+    "@backstage/core-plugin-api" "^1.5.2"
+    "@backstage/plugin-permission-common" "^0.7.7-next.0"
     "@types/react" "^16.13.1 || ^17.0.0"
     cross-fetch "^3.1.5"
     react-use "^17.2.4"
@@ -3625,6 +3783,14 @@
   integrity sha512-UkKHq9GuXa7x/3baIIcmD/5xi+OUOBEY30xoBqUmegZw2ZqrXdBer4mK2o/4XwUUdc4vk2E3RgZhh4aL5G6D+Q==
   dependencies:
     "@backstage/plugin-permission-common" "^0.7.6"
+    "@backstage/types" "^1.1.0"
+
+"@backstage/plugin-search-common@^1.2.5-next.0":
+  version "1.2.5-next.0"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@backstage/plugin-search-common/-/plugin-search-common-1.2.5-next.0.tgz#da419c4612b463d1368bb8c4e40d5724ae56cd12"
+  integrity sha512-Qoh/jf8QimzMgrL8bDsoZ0s8O6X3ikuRRBhf7ua8TOG2rWEhCBhcDhcnAYVd3ALMJ51RRM1K6LtYMWa1MkU09Q==
+  dependencies:
+    "@backstage/plugin-permission-common" "^0.7.7-next.0"
     "@backstage/types" "^1.1.0"
 
 "@backstage/plugin-search-react@^1.6.2":
@@ -4654,7 +4820,7 @@
     tslib "^2.4.0"
     value-or-promise "^1.0.12"
 
-"@graphql-typed-document-node/core@3.2.0", "@graphql-typed-document-node/core@^3.1.0", "@graphql-typed-document-node/core@^3.1.1":
+"@graphql-typed-document-node/core@3.2.0", "@graphql-typed-document-node/core@^3.1.0", "@graphql-typed-document-node/core@^3.1.1", "@graphql-typed-document-node/core@^3.2.0":
   version "3.2.0"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@graphql-typed-document-node/core/-/core-3.2.0.tgz#5f3d96ec6b2354ad6d8a28bf216a1d97b5426861"
   integrity sha512-mB9oAsNCm9aM3/SOv4YtBMqZbYj10R7dkq8byBqxGY/ncFwhf2oQzMV+LCRlWoDSEBJ3COiR1yeDvMtsoOsuFQ==
@@ -6542,6 +6708,21 @@
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==
 
+"@react-dnd/asap@^5.0.1":
+  version "5.0.2"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@react-dnd/asap/-/asap-5.0.2.tgz#1f81f124c1cd6f39511c11a881cfb0f715343488"
+  integrity sha512-WLyfoHvxhs0V9U+GTsGilGgf2QsPl6ZZ44fnv0/b8T3nQyvzxidxsg/ZltbWssbsRDlYW8UKSQMTGotuTotZ6A==
+
+"@react-dnd/invariant@^4.0.1":
+  version "4.0.2"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@react-dnd/invariant/-/invariant-4.0.2.tgz#b92edffca10a26466643349fac7cdfb8799769df"
+  integrity sha512-xKCTqAK/FFauOM9Ta2pswIyT3D8AQlfrYdOi/toTPEhqCuAs1v5tcJ3Y08Izh1cJ5Jchwy9SeAXmMg6zrKs2iw==
+
+"@react-dnd/shallowequal@^4.0.1":
+  version "4.0.2"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@react-dnd/shallowequal/-/shallowequal-4.0.2.tgz#d1b4befa423f692fa4abf1c79209702e7d8ae4b4"
+  integrity sha512-/RVXdLvJxLg4QKvMoM5WlwNR9ViO9z8B/qPcc+C0Sa/teJY7QG7kJ441DwzOjMYEY7GmU4dj5EcGHIkKZiQZCA==
+
 "@react-hookz/deep-equal@^1.0.4":
   version "1.0.4"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@react-hookz/deep-equal/-/deep-equal-1.0.4.tgz#68a71f36cbc88724b3ce6f4036183778b6e7f282"
@@ -6780,6 +6961,20 @@
     express "^4.17.1"
     luxon "^3.1.1"
 
+"@spotify/backstage-plugin-core@^0.5.3":
+  version "0.5.3"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@spotify/backstage-plugin-core/-/backstage-plugin-core-0.5.3.tgz#b435168c92fefc25b4dbe409d9323fba6e5c2392"
+  integrity sha512-d9tyR2WUWb+4mpkYAC1DCTVWsj5Y6TVepJA7CoKiU310kca5Z4PRHZX+fV94xHuaJBh2akae67lp6v6I4HLQNA==
+  dependencies:
+    "@backstage/core-components" "^0.13.2"
+    "@backstage/core-plugin-api" "^1.5.2"
+    "@material-ui/core" "^4.12.2"
+    "@material-ui/lab" "4.0.0-alpha.61"
+    "@spotify/backstage-plugin-core-common" "^0.5.3"
+    luxon "^3.1.1"
+    react-use "^17.2.4"
+    tiny-invariant "^1.3.1"
+
 "@spotify/backstage-plugin-soundcheck-backend@^0.7.0":
   version "0.7.0"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@spotify/backstage-plugin-soundcheck-backend/-/backstage-plugin-soundcheck-backend-0.7.0.tgz#90f5742326f95a0a32616915117052e3cb04911a"
@@ -6841,6 +7036,36 @@
     "@spotify/backstage-plugin-soundcheck-common" "^0.6.0"
     luxon "^3.1.1"
     zod "^3.20.0"
+
+"@spotify/backstage-plugin-soundcheck@^0.6.0-20230630111827-pulse-survey-pagination-SNAPSHOT":
+  version "0.6.0-20230630111827-pulse-survey-pagination-SNAPSHOT"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/download/@spotify/backstage-plugin-soundcheck/0.6.0-20230630111827-pulse-survey-pagination-SNAPSHOT/248e1fed6eef31aef4e60402e8a5d2f6665b0808#248e1fed6eef31aef4e60402e8a5d2f6665b0808"
+  integrity sha512-X2fWE+/oeDZUg4e1aehpxHSwk9CyL/K4a++70fG9AcT33Zfoewlk9KhSZBaiJnuND0s8BO2KUAOViWP1HivTYg==
+  dependencies:
+    "@backstage/catalog-model" "^1.4.1-next.0"
+    "@backstage/core-components" "^0.13.3-next.0"
+    "@backstage/core-plugin-api" "^1.5.2"
+    "@backstage/plugin-catalog-react" "^1.7.1-next.0"
+    "@backstage/plugin-permission-react" "^0.4.14-next.0"
+    "@backstage/theme" "^0.4.0"
+    "@backstage/types" "^1.1.0"
+    "@material-ui/core" "^4.12.2"
+    "@material-ui/icons" "^4.9.1"
+    "@material-ui/lab" "4.0.0-alpha.61"
+    "@spotify/backstage-plugin-core" "^0.5.3"
+    "@spotify/backstage-plugin-soundcheck-common" "^0.6.0"
+    "@tanstack/react-query" "^4.6.1"
+    classnames "^2.3.2"
+    graphql-request "6.1.0"
+    lodash "^4.17.21"
+    luxon "^3.1.1"
+    react-confetti "^6.1.0"
+    react-dnd "^16.0.1"
+    react-dnd-html5-backend "^16.0.1"
+    react-hook-form "^7.19.5"
+    react-use "^17.2.4"
+    react-window "^1.8.8"
+    uuid "^9.0.0"
 
 "@spotify/eslint-config-base@^14.0.0":
   version "14.1.6"
@@ -7370,6 +7595,19 @@
   integrity sha512-4BAffykYOgO+5nzBWYwE3W90sBgLJoUPRWWcL8wlyiM8IB8ipJz3UMJ9KXQd1RKQXpKp8Tutn80HZtWsu2u76w==
   dependencies:
     defer-to-connect "^2.0.0"
+
+"@tanstack/query-core@4.29.19":
+  version "4.29.19"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@tanstack/query-core/-/query-core-4.29.19.tgz#49ccbd0606633d1e55baf3b91ab7cc7aef411b1d"
+  integrity sha512-uPe1DukeIpIHpQi6UzIgBcXsjjsDaLnc7hF+zLBKnaUlh7jFE/A+P8t4cU4VzKPMFB/C970n/9SxtpO5hmIRgw==
+
+"@tanstack/react-query@^4.6.1":
+  version "4.29.19"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@tanstack/react-query/-/react-query-4.29.19.tgz#6ba187f2d0ea36ae83ff1f67068f53c88ce7b228"
+  integrity sha512-XiTIOHHQ5Cw1WUlHaD4fmVUMhoWjuNJlAeJGq7eM4BraI5z7y8WkZO+NR8PSuRnQGblpuVdjClQbDFtwxTtTUw==
+  dependencies:
+    "@tanstack/query-core" "4.29.19"
+    use-sync-external-store "^1.2.0"
 
 "@testing-library/dom@^8.0.0":
   version "8.20.1"
@@ -7935,7 +8173,7 @@
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@types/range-parser/-/range-parser-1.2.4.tgz#cd667bcfdd025213aafb7ca5915a932590acdcdc"
   integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
 
-"@types/react-dom@*", "@types/react-dom@<18.0.0":
+"@types/react-dom@*", "@types/react-dom@<18.0.0", "@types/react-dom@^17":
   version "17.0.20"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@types/react-dom/-/react-dom-17.0.20.tgz#e0c8901469d732b36d8473b40b679ad899da1b53"
   integrity sha512-4pzIjSxDueZZ90F52mU3aPoogkHIoSIDG+oQ+wQK7Cy2B9S+MvOqY0uEA/qawKz381qrEDkvpwyt8Bm31I8sbA==
@@ -8725,6 +8963,7 @@ anymatch@^3.0.3, anymatch@~3.1.2:
     "@backstage/theme" "^0.4.0"
     "@material-ui/core" "^4.12.2"
     "@material-ui/icons" "^4.9.1"
+    "@spotify/backstage-plugin-soundcheck" "^0.6.0-20230630111827-pulse-survey-pagination-SNAPSHOT"
     history "^5.0.0"
     react "^17.0.2"
     react-dom "^17.0.2"
@@ -9871,7 +10110,7 @@ cjs-module-lexer@^1.0.0:
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/cjs-module-lexer/-/cjs-module-lexer-1.2.3.tgz#6c370ab19f8a3394e318fe682686ec0ac684d107"
   integrity sha512-0TNiGstbQmCFwt4akjjBg5pLRTSyj/PkWQ1ZoO2zntmg9yLqSRxwEa4iCfQLGjqhiqBfOJa7W/E8wfGrTDmlZQ==
 
-classnames@^2.2.6, classnames@^2.3.1:
+classnames@^2.2.6, classnames@^2.3.1, classnames@^2.3.2:
   version "2.3.2"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
   integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
@@ -11291,6 +11530,15 @@ dir-glob@^3.0.1:
   integrity sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA==
   dependencies:
     path-type "^4.0.0"
+
+dnd-core@^16.0.1:
+  version "16.0.1"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/dnd-core/-/dnd-core-16.0.1.tgz#a1c213ed08961f6bd1959a28bb76f1a868360d19"
+  integrity sha512-HK294sl7tbw6F6IeuK16YSBUoorvHpY8RHO+9yFfaJyCDVb6n7PRcezrOEOa2SBCqiYpemh5Jx20ZcjKdFAVng==
+  dependencies:
+    "@react-dnd/asap" "^5.0.1"
+    "@react-dnd/invariant" "^4.0.1"
+    redux "^4.2.0"
 
 dns-equal@^1.0.0:
   version "1.0.0"
@@ -13241,6 +13489,14 @@ graphql-modules@^2.1.0:
     "@graphql-tools/wrap" "^9.0.0"
     "@graphql-typed-document-node/core" "^3.1.0"
     ramda "^0.28.0"
+
+graphql-request@6.1.0:
+  version "6.1.0"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/graphql-request/-/graphql-request-6.1.0.tgz#f4eb2107967af3c7a5907eb3131c671eac89be4f"
+  integrity sha512-p+XPfS4q7aIpKVcgmnZKhMNqhltk20hfXtkaIkTfjjmiKMJ5xrt5c743cL03y/K7y1rg3WrIC49xGiEQ4mxdNw==
+  dependencies:
+    "@graphql-typed-document-node/core" "^3.2.0"
+    cross-fetch "^3.1.5"
 
 graphql-scalars@^1.17.0:
   version "1.22.2"
@@ -19041,6 +19297,13 @@ react-beautiful-dnd@^13.0.0:
     redux "^4.0.4"
     use-memo-one "^1.1.1"
 
+react-confetti@^6.1.0:
+  version "6.1.0"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/react-confetti/-/react-confetti-6.1.0.tgz#03dc4340d955acd10b174dbf301f374a06e29ce6"
+  integrity sha512-7Ypx4vz0+g8ECVxr88W9zhcQpbeujJAVqL14ZnXJ3I23mOI9/oBVTQ3dkJhUmB0D6XOtCZEM6N0Gm9PMngkORw==
+  dependencies:
+    tween-functions "^1.2.0"
+
 react-copy-to-clipboard@5.1.0:
   version "5.1.0"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/react-copy-to-clipboard/-/react-copy-to-clipboard-5.1.0.tgz#09aae5ec4c62750ccb2e6421a58725eabc41255c"
@@ -19087,6 +19350,24 @@ react-dev-utils@^12.0.0-next.60:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
+react-dnd-html5-backend@^16.0.1:
+  version "16.0.1"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/react-dnd-html5-backend/-/react-dnd-html5-backend-16.0.1.tgz#87faef15845d512a23b3c08d29ecfd34871688b6"
+  integrity sha512-Wu3dw5aDJmOGw8WjH1I1/yTH+vlXEL4vmjk5p+MHxP8HuHJS1lAGeIdG/hze1AvNeXWo/JgULV87LyQOr+r5jw==
+  dependencies:
+    dnd-core "^16.0.1"
+
+react-dnd@^16.0.1:
+  version "16.0.1"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/react-dnd/-/react-dnd-16.0.1.tgz#2442a3ec67892c60d40a1559eef45498ba26fa37"
+  integrity sha512-QeoM/i73HHu2XF9aKksIUuamHPDvRglEwdHL4jsp784BgUuWcg6mzfxT0QDdQz8Wj0qyRKx2eMg8iZtWvU4E2Q==
+  dependencies:
+    "@react-dnd/invariant" "^4.0.1"
+    "@react-dnd/shallowequal" "^4.0.1"
+    dnd-core "^16.0.1"
+    fast-deep-equal "^3.1.3"
+    hoist-non-react-statics "^3.3.2"
+
 react-dom@^17.0.2:
   version "17.0.2"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
@@ -19125,6 +19406,11 @@ react-hook-form@^7.12.2:
   version "7.45.0"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/react-hook-form/-/react-hook-form-7.45.0.tgz#df2bbc8cee598855a63ba446e0bb06f7c8120ccf"
   integrity sha512-AbHeZ4ad+0dEIknSW9dBgIwcvRDfZ1O97sgj75WaMdOX0eg8TBiUf9wxzVkIjZbk76BBIE9lmFOzyD4PN80ZQg==
+
+react-hook-form@^7.19.5:
+  version "7.45.1"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/react-hook-form/-/react-hook-form-7.45.1.tgz#e352c7f4dbc7540f0756abbb4dcfd1122fecc9bb"
+  integrity sha512-6dWoFJwycbuFfw/iKMcl+RdAOAOHDiF11KWYhNDRN/OkUt+Di5qsZHwA0OwsVnu9y135gkHpTw9DJA+WzCeR9w==
 
 react-immutable-proptypes@2.2.0:
   version "2.2.0"
@@ -19293,7 +19579,7 @@ react-virtualized-auto-sizer@^1.0.11:
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/react-virtualized-auto-sizer/-/react-virtualized-auto-sizer-1.0.20.tgz#d9a907253a7c221c52fa57dc775a6ef40c182645"
   integrity sha512-OdIyHwj4S4wyhbKHOKM1wLSj/UDXm839Z3Cvfg2a9j+He6yDa6i5p0qQvEiCnyQlGO/HyfSnigQwuxvYalaAXA==
 
-react-window@^1.8.6:
+react-window@^1.8.6, react-window@^1.8.8:
   version "1.8.9"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/react-window/-/react-window-1.8.9.tgz#24bc346be73d0468cdf91998aac94e32bc7fa6a8"
   integrity sha512-+Eqx/fj1Aa5WnhRfj9dJg4VYATGwIUP2ItwItiJ6zboKWA6EX3lYDAXfGF2hyNqplEprhbtjbipiADEcwQ823Q==
@@ -19506,7 +19792,7 @@ redux-immutable@^4.0.0:
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/redux-immutable/-/redux-immutable-4.0.0.tgz#3a1a32df66366462b63691f0e1dc35e472bbc9f3"
   integrity sha512-SchSn/DWfGb3oAejd+1hhHx01xUoxY+V7TeK0BKqpkLKiQPVFf7DYzEaKmrEVxsWxielKfSK9/Xq66YyxgR1cg==
 
-redux@^4.0.0, redux@^4.0.4, redux@^4.1.2:
+redux@^4.0.0, redux@^4.0.4, redux@^4.1.2, redux@^4.2.0:
   version "4.2.1"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/redux/-/redux-4.2.1.tgz#c08f4306826c49b5e9dc901dee0452ea8fce6197"
   integrity sha512-LAUYz4lc+Do8/g7aeRa8JkyDErK6ekstQaqWQrNRW//MY1TvCEpMtpTWvlQ+FPbWCx+Xixu/6SHt5N0HR+SB4w==
@@ -21311,7 +21597,7 @@ timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
-tiny-invariant@^1.0.6:
+tiny-invariant@^1.0.6, tiny-invariant@^1.3.1:
   version "1.3.1"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/tiny-invariant/-/tiny-invariant-1.3.1.tgz#8560808c916ef02ecfd55e66090df23a4b7aa642"
   integrity sha512-AD5ih2NlSssTCwsMznbvwMZpJ1cbhkGd2uueNxzv2jDlEeZdU04JQfRnggJQ8DrcVBGjAsCKwFBbDlVNtEMlzw==
@@ -21575,6 +21861,11 @@ tunnel@0.0.6, tunnel@^0.0.6:
   version "0.0.6"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/tunnel/-/tunnel-0.0.6.tgz#72f1314b34a5b192db012324df2cc587ca47f92c"
   integrity sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg==
+
+tween-functions@^1.2.0:
+  version "1.2.0"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/tween-functions/-/tween-functions-1.2.0.tgz#1ae3a50e7c60bb3def774eac707acbca73bbc3ff"
+  integrity sha512-PZBtLYcCLtEcjL14Fzb1gSxPBeL7nWvGhO5ZFPGqziCcr8uvHp0NDmdjBchp6KHL+tExcg0m3NISmKxhU394dA==
 
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
