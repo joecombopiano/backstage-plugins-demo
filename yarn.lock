@@ -6977,7 +6977,7 @@
 
 "@spotify/backstage-plugin-soundcheck-backend@^0.7.0":
   version "0.7.0"
-  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@spotify/backstage-plugin-soundcheck-backend/-/backstage-plugin-soundcheck-backend-0.7.0.tgz#90f5742326f95a0a32616915117052e3cb04911a"
+  resolved "https://registry.yarnpkg.com/@spotify/backstage-plugin-soundcheck-backend/-/backstage-plugin-soundcheck-backend-0.7.0.tgz#90f5742326f95a0a32616915117052e3cb04911a"
   integrity sha512-jlywxv0ZTTvj4IjaQMBISC1a2GkZIJHjnK3bABc8EkmWgSnhL4FJ8a+IgkoFknrXfVIIb2ftagnS4I47hjGJsA==
   dependencies:
     "@apollo/server" "^4.0.0"
@@ -7037,10 +7037,38 @@
     luxon "^3.1.1"
     zod "^3.20.0"
 
-"@spotify/backstage-plugin-soundcheck@^0.6.0-20230630111827-pulse-survey-pagination-SNAPSHOT":
-  version "0.6.0-20230630111827-pulse-survey-pagination-SNAPSHOT"
-  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/download/@spotify/backstage-plugin-soundcheck/0.6.0-20230630111827-pulse-survey-pagination-SNAPSHOT/248e1fed6eef31aef4e60402e8a5d2f6665b0808#248e1fed6eef31aef4e60402e8a5d2f6665b0808"
-  integrity sha512-X2fWE+/oeDZUg4e1aehpxHSwk9CyL/K4a++70fG9AcT33Zfoewlk9KhSZBaiJnuND0s8BO2KUAOViWP1HivTYg==
+"@spotify/backstage-plugin-soundcheck@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@spotify/backstage-plugin-soundcheck/-/backstage-plugin-soundcheck-0.5.0.tgz#2c5df7173231d3d2356815cd0f15f56306beca3c"
+  integrity sha512-0JHuG/YU1/Fnm60mKksojQsbXmUQVt1kCfxYr/F+gwlp768XguijJTzLjggy2o+hqM90m//udBqUXCt6L+rTHA==
+  dependencies:
+    "@backstage/catalog-model" "^1.4.0"
+    "@backstage/core-components" "^0.13.2"
+    "@backstage/core-plugin-api" "^1.5.2"
+    "@backstage/plugin-catalog-react" "^1.7.0"
+    "@backstage/theme" "^0.4.0"
+    "@backstage/types" "^1.1.0"
+    "@material-ui/core" "^4.12.2"
+    "@material-ui/icons" "^4.9.1"
+    "@material-ui/lab" "4.0.0-alpha.61"
+    "@spotify/backstage-plugin-core" "^0.5.3"
+    "@tanstack/react-query" "^4.6.1"
+    classnames "^2.3.2"
+    graphql-request "6.1.0"
+    lodash "^4.17.21"
+    luxon "^3.1.1"
+    react-confetti "^6.1.0"
+    react-dnd "^16.0.1"
+    react-dnd-html5-backend "^16.0.1"
+    react-hook-form "^7.19.5"
+    react-use "^17.2.4"
+    react-window "^1.8.8"
+    uuid "^9.0.0"
+
+"@spotify/backstage-plugin-soundcheck@^0.6.0-20230703092954-fix-pagination-SNAPSHOT":
+  version "0.6.0-20230703092954-fix-pagination-SNAPSHOT"
+  resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/download/@spotify/backstage-plugin-soundcheck/0.6.0-20230703092954-fix-pagination-SNAPSHOT/7cc1dc09b6e55c683350b74e73f242d068bcc7b3#7cc1dc09b6e55c683350b74e73f242d068bcc7b3"
+  integrity sha512-aU5H6VXNWX6Xx7bG/SI5uervVIp/nn+fdW6fHdZ3/K0Gi02jI1X9ran+FjB0ww0mk61Xpmag6oaRXGtHQ6FK/A==
   dependencies:
     "@backstage/catalog-model" "^1.4.1-next.0"
     "@backstage/core-components" "^0.13.3-next.0"
@@ -8173,7 +8201,7 @@
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@types/range-parser/-/range-parser-1.2.4.tgz#cd667bcfdd025213aafb7ca5915a932590acdcdc"
   integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
 
-"@types/react-dom@*", "@types/react-dom@<18.0.0", "@types/react-dom@^17":
+"@types/react-dom@*", "@types/react-dom@<18.0.0":
   version "17.0.20"
   resolved "https://artifactory.spotify.net/artifactory/api/npm/virtual-npm/@types/react-dom/-/react-dom-17.0.20.tgz#e0c8901469d732b36d8473b40b679ad899da1b53"
   integrity sha512-4pzIjSxDueZZ90F52mU3aPoogkHIoSIDG+oQ+wQK7Cy2B9S+MvOqY0uEA/qawKz381qrEDkvpwyt8Bm31I8sbA==
@@ -8963,7 +8991,7 @@ anymatch@^3.0.3, anymatch@~3.1.2:
     "@backstage/theme" "^0.4.0"
     "@material-ui/core" "^4.12.2"
     "@material-ui/icons" "^4.9.1"
-    "@spotify/backstage-plugin-soundcheck" "^0.6.0-20230630111827-pulse-survey-pagination-SNAPSHOT"
+    "@spotify/backstage-plugin-soundcheck" "^0.6.0-20230703092954-fix-pagination-SNAPSHOT"
     history "^5.0.0"
     react "^17.0.2"
     react-dom "^17.0.2"
